@@ -1,0 +1,10 @@
+<?php
+// VULNERABLE: Backup con credenciales
+$db_host = 'localhost';
+$db_user = 'root';
+$db_pass = 'root_password_123';
+$db_name = 'vulnerable_app';
+
+// OLD API KEY
+$api_key = 'secret_api_key_12345';
+?>

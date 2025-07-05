@@ -1,0 +1,14 @@
+# VULNERABLE: Configuración insegura
+Options +Indexes
+Options +FollowSymLinks
+AllowOverride All
+
+# VULNERABLE: Información sensible expuesta
+# RewriteEngine On
+# RewriteRule ^admin$ admin_panel.php [L]
+
+# VULNERABLE: Backup files accesibles
+<Files "*.bak">
+    Order allow,deny
+    Allow from all
+</Files>
